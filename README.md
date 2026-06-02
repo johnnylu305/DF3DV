@@ -73,10 +73,10 @@ We release one thousand scenes with clean and cluttered images for distractor-fr
 
 ### Download
 The masked dataset can be downloaded from both Hugging Face and Google Cloud.
-- [DF3DV-1K Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-1K)
-- [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1OuLBTius8bnXfd51ckgRo7H32ZRv2q8N?usp=sharing)
+- [DF3DV-1K Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-1K) (~1TB)
+- [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1OuLBTius8bnXfd51ckgRo7H32ZRv2q8N?usp=sharing) (~1TB)
   
-The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here]().
+The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here](https://docs.google.com/forms/d/e/1FAIpQLSfQDGWlcIUNees5SqmOmgnQ4vlk7VnkA703ybgHbJLV-MSoZg/viewform?usp=dialog).
 
 
 ## DF3DV-1K-Fixer
@@ -145,7 +145,7 @@ We also release paired 3DGS/Distractor-Free 3DGS renderings and corresponding gr
 
 ### Download
 The masked dataset can be downloaded from both Hugging Face and Google Cloud.
-- [DF3DV-1K Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-1K-Fixer)
-- [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1JE399E_o45mLavMqEWzpEYAlB-4-rjkc?usp=sharing)
+- [DF3DV-1K Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-1K-Fixer) (~0.2TB)
+- [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1JE399E_o45mLavMqEWzpEYAlB-4-rjkc?usp=sharing) (~0.2TB)
   
-The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here]().
+The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here](https://docs.google.com/forms/d/e/1FAIpQLSfQDGWlcIUNees5SqmOmgnQ4vlk7VnkA703ybgHbJLV-MSoZg/viewform?usp=dialog).

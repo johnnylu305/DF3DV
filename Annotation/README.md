@@ -6,6 +6,10 @@
 # Example
 python blur_face_and_license_plate.py --root 0000 --face_model yolov11l-face.pt --plate_model license-plate-finetune-v1x.pt
 
+# Manually remove false face and license plate detections, typically in actor or statue scenes
+# Example
+python blur_face_and_license_plate_interactive.py --root DF3DV-41 --face_model yolov11l-face.pt --plate_model license-plate-finetune-v1x.pt --interactive
+
 # Blur DF3DV-1K-Fixer
 # Example
 python blur_fixer_images.py --root 0000 --face_model yolov11l-face.pt --plate_model license-plate-finetune-v1x.pt

@@ -1,3 +1,10 @@
+## Metadata Labeling
+```
+# Example
+python label_meta.py --root 0000 --meta Meta
+```
+
+
 ## Face and License Plate Masking
 - Download the YOLO [face detection model](https://github.com/akanametov/yolo-face) and [license plate detection model](https://huggingface.co/morsetechlab/yolov11-license-plate-detection).
 - Download the Meta folder from Google Drive or Hugging Face (see [here]()).

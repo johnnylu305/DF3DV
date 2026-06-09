@@ -48,7 +48,7 @@ mmddyy-SceneName/
 
 You can preview sample organized scenes [here](https://drive.google.com/drive/folders/1t0XX_gPOVYVyD8S8YPaTw9M8rLCB0-n7?usp=sharing).
 
-## Processing
+## Preprocessing
 
 <details>
 <summary>Directory Structure</summary>
@@ -97,3 +97,60 @@ mmddyy-SceneName/
 </details>
 
 You can preview sample preprocessed scenes [here](https://drive.google.com/drive/folders/1tLgeZCB6ZPJaBAZV4kx5N_bXUmZcraQP?usp=sharing).
+
+## Pose Estimation and Tool-Assisted Verification
+
+COLMAP Pose Estimation and Undistortion
+```
+# Run COLMAP3.7 pose estimation and undistortion.
+# Requires COLMAP.
+# If pose estimation fails, remove all generated files in mmddyy-SceneName-All except the images folder,
+# then consider tuning Mapper.abs_pose_min_num_inliers or Mapper.min_model_size
+# (e.g., reduce them from 35 to 15 and from 20 to 10, respectively).
+bash pose_estimation_all.sh
+```
+
+<details>
+<summary>Current Directory Structure</summary>
+  
+```
+mmddyy-SceneName/
+├── mmddyy-SceneName-All
+│   ├── images
+│   ├── sparse
+│   ├── undistortion_images
+│   ├── undistortion_sparse
+│   ├── split.json
+│   ├── transforms.json
+│   ├── transforms_clutter.json
+│   └── transforms_extra.json
+├── mmddyy-SceneName-Clean
+└── mmddyy-SceneName-Clutter
+```
+
+</details>
+
+You can preview sample processed scenes [here](https://drive.google.com/drive/folders/1hHbe3AkQiEOEI0qgWuznPfnyUMzPQXKf?usp=sharing).
+
+</details>
+
+Tool-Assisted Verification
+```
+# Requires instant-ngp.
+cd instant-ngp
+
+# Visualize the scene using instant-ngp.
+# Enable Debug Visualization/Visualize Cameras.
+# Check that extra and clutter views are present and that the scene looks correct.
+# If not, rerun COLMAP pose estimation with different parameters.
+./instant-ngp <path>/mmddyy-SceneName/mmddyy-SceneName-All/transforms.json
+```
+
+## Wrap-Up
+
+```
+# Create ZIP archives for all processed scene folders.
+bash zip_folders.sh
+```
+
+

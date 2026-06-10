@@ -134,6 +134,21 @@ You can preview sample processed scenes [here](https://drive.google.com/drive/fo
 
 </details>
 
+<details>
+<summary>
+Follow the official Instant-NGP installation using
+<a href="https://github.com/NVlabs/instant-ngp">this repository</a> and the follwing commit
+</summary>
+  
+```
+git clone --recursive https://github.com/NVlabs/instant-ngp.git
+cd instant-ngp
+# use this commit (not sure why the latest commit has flaoter in fox example)
+git checkout 55ce675
+git submodule update --init --recursive
+```
+</details>
+
 Tool-Assisted Verification
 ```
 # Requires instant-ngp.

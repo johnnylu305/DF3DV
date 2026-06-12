@@ -53,6 +53,63 @@ DF3DV-1K
 ## Output Instructions
 
 The following is the recommended output directory structure.
-```
 
+- Place your `<method>` in the `MODELS` folder.
+- Place the checkpoint used for evaluation in `<method>/ckpts/`.
+- Place the composition images (`|GT|Mask|Rendering|`) of the training views in `renders/composition_<step>/`.
+- Place the ground-truth training-view images (`|GT|`) in `renders/data_<step>/`.
+- Place the mask images (`|Mask|`) of the training views in `renders/mask_<step>/`.
+- Place the rendered training-view images (`|Rendering|`) in `renders/render_<step>/`.
+- Place the evaluated images (`|GT|Rendering|`) of the evaluation views in `renders/`.
+- Place `val_<step>.json` containing `{"psnr": xx, "ssim": xx, "lpips": xx}` in the `stats` folder.
+- Place any additional files in the `MODELS` folder if necessary.
+
+
+
+```
+DF3DV-1K
+├── DF3DV-1K-Star
+│   ├── 0000
+│   │   ├── 040625-LundoBin
+│   │   │   └── 040625-LundoBin-All
+│   │   │       └── MODELS
+│   │   │           ├── 3DGS
+│   │   │           │   ├── 3dgs_log.txt
+│   │   │           │   ├── cfg.json
+│   │   │           │   ├── ckpts
+│   │   │           │   │   └── ckpt_29999.pt
+│   │   │           │   ├── renders
+│   │   │           │   │   ├── composition_29999
+│   │   │           │   │   │   ├── clutter_IMG_7042.png
+│   │   │           │   │   │   ├── ...
+│   │   │           │   │   │   └── clutter_IMG_7140.png
+│   │   │           │   │   ├── data_29999
+│   │   │           │   │   │   ├── clutter_IMG_7042.png
+│   │   │           │   │   │   ├── ...
+│   │   │           │   │   │   └── clutter_IMG_7140.png
+│   │   │           │   │   ├── mask_29999
+│   │   │           │   │   │   ├── clutter_IMG_7042.png
+│   │   │           │   │   │   ├── ...
+│   │   │           │   │   │   └── clutter_IMG_7140.png
+│   │   │           │   │   ├── render_29999
+│   │   │           │   │   │   ├── clutter_IMG_7042.png
+│   │   │           │   │   │   ├── ...
+│   │   │           │   │   │   └── clutter_IMG_7140.png
+│   │   │           │   │   ├── extra_IMG_6957.png
+│   │   │           │   │   ├── ...
+│   │   │           │   │   └── extra_IMG_7041.png
+│   │   │           │   ├── stats
+│   │   │           │   │   ├── train_step29999.json
+│   │   │           │   │   └── val_step29999.json
+│   │   │           │   ├── tb
+│   │   │           │   │   └── events.out.tfevents.1781183745.cibci9.ihpc.uts.edu.au.1105142.0
+│   │   │           │   └── videos
+│   │   │           │       └── traj_29999.gif
+│   │   │           ├── ...
+│   │   │           └── WILDGS
+│   │   ├── ...
+│   │   └── 090625-BlueBikeBell
+│   ├── ...
+│   └── 0024
+└── DF3DV-41
 ```

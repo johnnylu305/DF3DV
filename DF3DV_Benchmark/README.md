@@ -64,8 +64,6 @@ The following is the recommended output directory structure.
 - Place `val_<step>.json` containing `{"psnr": xx, "ssim": xx, "lpips": xx}` of evaluated images in the `stats` folder.
 - Place any additional files in the `MODELS` folder if necessary.
 
-
-
 ```
 DF3DV-1K
 ├── DF3DV-1K-Star
@@ -113,3 +111,5 @@ DF3DV-1K
 │   └── 0024
 └── DF3DV-41
 ```
+You can preview a sample scene [here](https://drive.google.com/file/d/1ebdHQUJCqMCU3VyPDSE3GqoFoJMpfIWC/view?usp=sharing).
+

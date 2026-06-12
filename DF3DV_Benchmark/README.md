@@ -61,7 +61,7 @@ The following is the recommended output directory structure.
 - Place the mask images (`|Mask|`) of the training views in `renders/mask_<step>/`.
 - Place the rendered training-view images (`|Rendering|`) in `renders/render_<step>/`.
 - Place the evaluated images (`|GT|Rendering|`) of the evaluation views in `renders/`.
-- Place `val_<step>.json` containing `{"psnr": xx, "ssim": xx, "lpips": xx}` in the `stats` folder.
+- Place `val_<step>.json` containing `{"psnr": xx, "ssim": xx, "lpips": xx}` of evaluated images in the `stats` folder.
 - Place any additional files in the `MODELS` folder if necessary.
 
 

@@ -113,3 +113,15 @@ DF3DV-1K
 ```
 You can preview a sample scene [here](https://drive.google.com/file/d/1ebdHQUJCqMCU3VyPDSE3GqoFoJMpfIWC/view?usp=sharing).
 
+# Benchmarked 3DGS/DF-3DGS codebases
+- [AsymGS](https://github.com/johnnylu305/AsymGS-DF3DV)
+- [DeGauss](https://github.com/johnnylu305/DeGauss-DF3DV)
+- [DeSplat](https://github.com/johnnylu305/desplat-DF3DV)
+- [OCSplats](https://github.com/johnnylu305/OCSplats-DF3DV)
+- [RobustSplat](https://github.com/johnnylu305/RobustSplat-DF3DV)
+- [SpotLessSplats](https://github.com/johnnylu305/SpotLessSplats-DF3DV)
+- [T-3DGS](https://github.com/johnnylu305/T-3DGS-DF3DV)
+- [T-3DGS-TMR](https://github.com/johnnylu305/T-3DGS-DF3DV)
+- [WildGaussians](https://github.com/johnnylu305/wild-gaussians-DF3DV)
+- [3DGS](https://github.com/johnnylu305/SpotLessSplats-DF3DV)
+

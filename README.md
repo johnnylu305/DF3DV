@@ -15,6 +15,21 @@
 </div>
 
 
+## Outline
+
+- Dataset
+    - [DF3DV-1K Dataset](https://github.com/johnnylu305/DF3DV#download)
+    - [DI²FIX Dataset](https://github.com/johnnylu305/DF3DV/tree/main#download-1)
+- Quick Start
+    - [DF3DV-1K Quick Start](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Benchmark)
+    - [DI²FIX Quick Start](https://github.com/johnnylu305/DI2FIX)
+- Benchmark
+    - [Leaderboard]()
+    - [Leaderboard Submission]() 
+- Data Customization
+  - [DF3DV-1K](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Data_Preparation)
+  - [DI²FIX](https://github.com/johnnylu305/DF3DV/tree/main/Fixer_Data_Preparation)
+
 ## DF3DV-1K
 
 We release one thousand scenes with clean and cluttered images for distractor-free 3D vision research. The first few chunks were captured using interval shooting, resulting in a more casual and lower-quality capture setting (e.g., 0000 vs. 0024).

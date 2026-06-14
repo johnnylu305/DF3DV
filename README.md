@@ -1,4 +1,19 @@
-# DF3DV-1K
+---
+<div align="center">
+
+# DF3DV-1K: A Large-Scale Dataset and Benchmark for Distractor-Free Novel View Synthesis
+
+[Cheng-You Lu](https://johnnylu305.github.io/)<sup>1</sup>, Yi-Shan Hung<sup>2*</sup>, Wei-Ling Chi<sup>3*</sup>, Hao-Ping Wang<sup>3*</sup>,  Charlie Li-Ting Tsai<sup>1*</sup>, Yu-Cheng Chang<sup>1</sup>, [Yu-Lun Liu](https://yulunalexliu.github.io/)<sup>3</sup>, Thomas Do<sup>1</sup>, [Chin-Teng Lin](https://scholar.google.com/citations?user=nubkF1cAAAAJ&hl=zh-TW)<sup>1</sup>
+
+<p><sup>1</sup>University of Technology Sydney &nbsp;&nbsp;<sup>2</sup>University of Sydney&nbsp;&nbsp;<sup>3</sup>National Yang Ming Chiao Tung University&nbsp;&nbsp;
+<br><sup>*</sup>Equal Contribution&nbsp;&nbsp;
+
+### [Project Page]() · [Paper](https://arxiv.org/abs/2604.13416) · [DF3DV-1K Dataset](https://github.com/johnnylu305/DF3DV#download) · [DF3DV Benchmark](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Benchmark)
+### [DI²FIX Dataset](https://github.com/johnnylu305/DF3DV/tree/main#download-1) · [DI²FIX Demo Page]() · [DI²FIX Codebase]()
+
+---
+</div>
+
 
 ## DF3DV-1K
 
@@ -149,3 +164,13 @@ The masked dataset can be downloaded from both Hugging Face and Google Cloud.
 - [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1JE399E_o45mLavMqEWzpEYAlB-4-rjkc?usp=sharing) (~0.2TB)
   
 The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here](https://docs.google.com/forms/d/e/1FAIpQLSfQDGWlcIUNees5SqmOmgnQ4vlk7VnkA703ybgHbJLV-MSoZg/viewform?usp=dialog).
+
+## Citation
+```
+@article{lu2026df3dv,
+  title={DF3DV-1K: A Large-Scale Dataset and Benchmark for Distractor-Free Novel View Synthesis},
+  author={Lu, Cheng-You and Hung, Yi-Shan and Chi, Wei-Ling and Wang, Hao-Ping and Tsai, Charlie Li-Ting and Chang, Yu-Cheng and Liu, Yu-Lun and Do, Thomas and Lin, Chin-Teng},
+  journal={arXiv preprint arXiv:2604.13416},
+  year={2026}
+}
+```

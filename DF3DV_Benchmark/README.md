@@ -113,7 +113,7 @@ DF3DV-1K
 ```
 You can preview a sample scene [here](https://drive.google.com/file/d/1ebdHQUJCqMCU3VyPDSE3GqoFoJMpfIWC/view?usp=sharing).
 
-# Benchmarked 3DGS/DF-3DGS codebases
+## Benchmarked 3DGS/DF-3DGS codebases
 - [AsymGS](https://github.com/johnnylu305/AsymGS-DF3DV)
 - [DeGauss](https://github.com/johnnylu305/DeGauss-DF3DV)
 - [DeSplat](https://github.com/johnnylu305/desplat-DF3DV)
@@ -125,3 +125,8 @@ You can preview a sample scene [here](https://drive.google.com/file/d/1ebdHQUJCq
 - [WildGaussians](https://github.com/johnnylu305/wild-gaussians-DF3DV)
 - [3DGS](https://github.com/johnnylu305/SpotLessSplats-DF3DV)
 
+## Evaluation
+```
+# evaluate metrics between undistortion_images_8/extra*.JPG and renders/extra*.png
+python benchmark_df3dv.py --root DF3DV-1K --eval_star --eval_41 --start 0 --end 24 --num_workers 8
+```

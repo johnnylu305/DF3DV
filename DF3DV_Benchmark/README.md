@@ -130,3 +130,29 @@ You can preview a sample scene [here](https://drive.google.com/file/d/1ebdHQUJCq
 # evaluate metrics between undistortion_images_8/extra*.JPG and renders/extra*.png
 python benchmark_df3dv.py --root DF3DV-1K --eval_star --eval_41 --start 0 --end 24 --num_workers 8
 ```
+
+## Leaderboard File Preparation
+
+- You can extract the rendering images of `<method>` into the `leaderboard/<method>` folder using the following commands. 
+```
+# DF3DV-1K
+python extract_leaderboard_images.py --root DF3DV-1K --method <method> --eval_star --eval_41 --start 0 --end 24
+
+# DF3DV-41
+python extract_leaderboard_images.py --root DF3DV-1K --method <method> --eval_41
+```
+- After extraction, please compress the folder into a ZIP file.
+- We will use the provided evaluation script to recompute PSNR, LPIPS (AlexNet), and SSIM between the rendered images in `leaderboard/<method>` and their corresponding ground-truth images in `undistortion_images_8`.
+```
+# DF3DV-1K
+python benchmark_leaderboard.py --root DF3DV-1K --method <method> --eval_star --eval_41 --start 0 --end 24 --num_workers 8
+
+# DF3DV-41
+python benchmark_leaderboard.py --root DF3DV-1K --method <method> --eval_41 --num_workers 8
+```
+
+## Leaderboard File Submission
+
+- The official leaderboard currently accepts DF3DV-41 submissions only.
+- Please complete the submission [form]() first.
+- Then, zip the submission files and send them to [Cheng-You Lu](mailto:a2694815@gmail.com), together with a Google Drive download link.

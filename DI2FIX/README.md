@@ -56,7 +56,7 @@ pip install -r requirements.txt
 </details>
   
 ## Download Dataset
-Please see the dataset download information and instructions [here]().
+Please see the dataset download information and instructions [here](https://github.com/johnnylu305/DF3DV/tree/main#df3dv-1k-fixer).
 
 ## Reproduced Checkpoints and Results
 

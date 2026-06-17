@@ -20,6 +20,7 @@ def save_rgb(path: Path, img: np.ndarray) -> None:
 
 
 def extract_right_half(path: Path) -> np.ndarray:
+    """Extract the Rendering half from a |GT|Rendering| image."""
     img = load_rgb(path)
     h, w, c = img.shape
 
@@ -43,31 +44,47 @@ def get_scene_all_dir(scene_dir: Path) -> Path:
 
 
 def collect_star_scenes(root: Path, start: int, end: int):
+    """
+    Return (chunk_name, scene_dir) for DF3DV-1K-Star.
+
+    Output should keep the chunk level:
+      leaderboard/<method>/DF3DV-1K-Star/0000/<scene>/extra_*.png
+    """
     star_root = root / "DF3DV-1K-Star"
     if not star_root.is_dir():
         raise FileNotFoundError(f"Missing DF3DV-1K-Star folder: {star_root}")
 
     scenes = []
     for cid in range(start, end + 1):
-        chunk_dir = star_root / f"{cid:04d}"
+        chunk_name = f"{cid:04d}"
+        chunk_dir = star_root / chunk_name
         if not chunk_dir.is_dir():
             raise FileNotFoundError(f"Missing chunk folder: {chunk_dir}")
-        scenes.extend(list_scene_dirs(chunk_dir))
+
+        for scene_dir in list_scene_dirs(chunk_dir):
+            scenes.append((chunk_name, scene_dir))
 
     return scenes
 
 
 def collect_41_scenes(root: Path):
+    """
+    Return (None, scene_dir) for DF3DV-41.
+
+    DF3DV-41 does not have chunk folders:
+      leaderboard/<method>/DF3DV-41/<scene>/extra_*.png
+    """
     df41_root = root / "DF3DV-41"
     if not df41_root.is_dir():
         raise FileNotFoundError(f"Missing DF3DV-41 folder: {df41_root}")
-    return list_scene_dirs(df41_root)
+
+    return [(None, scene_dir) for scene_dir in list_scene_dirs(df41_root)]
 
 
-def extract_dataset(root: Path, dataset_name: str, scene_dirs, method: str):
+def extract_dataset(root: Path, dataset_name: str, scene_entries, method: str):
     out_root = root / "leaderboard" / method / dataset_name
 
-    for scene_dir in tqdm(scene_dirs, desc=f"Extract {dataset_name}/{method}"):
+    for chunk_name, scene_dir in tqdm(scene_entries, desc=f"Extract {dataset_name}/{method}"):
         scene_all = get_scene_all_dir(scene_dir)
 
         renders_dir = scene_all / "MODELS" / method / "renders"
@@ -82,7 +99,11 @@ def extract_dataset(root: Path, dataset_name: str, scene_dirs, method: str):
         if len(render_paths) == 0:
             raise FileNotFoundError(f"No extra_*.png found in: {renders_dir}")
 
-        scene_out_dir = out_root / scene_dir.name
+        if chunk_name is None:
+            scene_out_dir = out_root / scene_dir.name
+        else:
+            scene_out_dir = out_root / chunk_name / scene_dir.name
+
         scene_out_dir.mkdir(parents=True, exist_ok=True)
 
         for render_path in render_paths:

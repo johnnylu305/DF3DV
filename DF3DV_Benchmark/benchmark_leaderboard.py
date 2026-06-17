@@ -40,25 +40,47 @@ def get_scene_all_dir(scene_dir: Path) -> Path:
 
 
 def collect_star_scenes(root: Path, start: int, end: int):
+    """Return (scene_dir, leaderboard_rel_dir, csv_name) for DF3DV-1K-Star.
+
+    The chunk is used only for leaderboard prediction lookup.
+    The CSV still writes only scene_dir.name as object_name.
+
+    Star has an extra chunk level:
+      DF3DV-1K-Star/0000/<scene>/...
+
+    Therefore leaderboard predictions are expected at:
+      leaderboard/<method>/DF3DV-1K-Star/0000/<scene>/extra_*.png
+    """
     star_root = root / "DF3DV-1K-Star"
     if not star_root.is_dir():
         raise FileNotFoundError(f"Missing DF3DV-1K-Star folder: {star_root}")
 
     scenes = []
     for cid in range(start, end + 1):
-        chunk_dir = star_root / f"{cid:04d}"
+        chunk_name = f"{cid:04d}"
+        chunk_dir = star_root / chunk_name
         if not chunk_dir.is_dir():
             raise FileNotFoundError(f"Missing chunk folder: {chunk_dir}")
-        scenes.extend(list_scene_dirs(chunk_dir))
+
+        for scene_dir in list_scene_dirs(chunk_dir):
+            rel_dir = Path(chunk_name) / scene_dir.name
+            csv_name = scene_dir.name
+            scenes.append((scene_dir, rel_dir, csv_name))
 
     return scenes
 
 
 def collect_41_scenes(root: Path):
+    """Return (scene_dir, leaderboard_rel_dir, csv_name) for DF3DV-41.
+
+    DF3DV-41 does not have a chunk level:
+      leaderboard/<method>/DF3DV-41/<scene>/extra_*.png
+    """
     df41_root = root / "DF3DV-41"
     if not df41_root.is_dir():
         raise FileNotFoundError(f"Missing DF3DV-41 folder: {df41_root}")
-    return list_scene_dirs(df41_root)
+
+    return [(scene_dir, Path(scene_dir.name), scene_dir.name) for scene_dir in list_scene_dirs(df41_root)]
 
 
 def collect_gt_images(scene_all: Path):
@@ -77,11 +99,17 @@ def collect_gt_images(scene_all: Path):
     return gt_paths
 
 
-def collect_pairs(root: Path, dataset_name: str, scene_dir: Path, method: str):
+def collect_pairs(
+    root: Path,
+    dataset_name: str,
+    scene_dir: Path,
+    leaderboard_rel_dir: Path,
+    method: str,
+):
     scene_all = get_scene_all_dir(scene_dir)
     gt_paths = collect_gt_images(scene_all)
 
-    pred_dir = root / "leaderboard" / method / dataset_name / scene_dir.name
+    pred_dir = root / "leaderboard" / method / dataset_name / leaderboard_rel_dir
     if not pred_dir.is_dir():
         raise FileNotFoundError(f"Missing prediction folder: {pred_dir}")
 
@@ -177,7 +205,7 @@ def patch_avg_row(csv_path: Path, avg_row: List[object]):
 def evaluate_dataset(
     root: Path,
     dataset_name: str,
-    scene_dirs,
+    scene_items,
     method: str,
     device: torch.device,
     num_workers: int,
@@ -206,8 +234,17 @@ def evaluate_dataset(
         writer.writerow(header)
         write_placeholder_avg_row(writer, len(header))
 
-        for scene_dir in tqdm(scene_dirs, desc=f"Benchmark {dataset_name}/{method}"):
-            pairs = collect_pairs(root, dataset_name, scene_dir, method)
+        for scene_dir, leaderboard_rel_dir, csv_name in tqdm(
+            scene_items,
+            desc=f"Benchmark {dataset_name}/{method}",
+        ):
+            pairs = collect_pairs(
+                root=root,
+                dataset_name=dataset_name,
+                scene_dir=scene_dir,
+                leaderboard_rel_dir=leaderboard_rel_dir,
+                method=method,
+            )
 
             psnr, ssim, lpips = compute_scene_metrics(
                 pairs=pairs,
@@ -222,7 +259,7 @@ def evaluate_dataset(
             all_ssim.append(ssim)
             all_lpips.append(lpips)
 
-            writer.writerow([scene_dir.name, psnr, ssim, lpips])
+            writer.writerow([csv_name, psnr, ssim, lpips])
             f.flush()
 
             #print(
@@ -266,7 +303,7 @@ def main():
         evaluate_dataset(
             root=root,
             dataset_name="DF3DV-1K-Star",
-            scene_dirs=scenes,
+            scene_items=scenes,
             method=args.method,
             device=device,
             num_workers=args.num_workers,
@@ -277,7 +314,7 @@ def main():
         evaluate_dataset(
             root=root,
             dataset_name="DF3DV-41",
-            scene_dirs=scenes,
+            scene_items=scenes,
             method=args.method,
             device=device,
             num_workers=args.num_workers,

@@ -160,7 +160,7 @@ If you would like to process your own data for training or evaluation, you can f
 DI<sup>2</sup>FIX is built upon the following project:
 - [Difix3D](https://github.com/nv-tlabs/Difix3D)
 - [DF3DV-1K](https://github.com/johnnylu305/DF3DV-1K)
-- [DF3DV-1K-Fixer]([https://github.com/johnnylu305/DF3DV-1K](https://github.com/johnnylu305/DF3DV#download-1))
+- [DF3DV-1K-Fixer](https://github.com/johnnylu305/DF3DV/tree/main#df3dv-1k-fixer)
 
 ## License
 The license of DI<sup>2</sup>FIX follows the Difix3D [license](https://github.com/nv-tlabs/Difix3D/blob/main/LICENSE.txt).

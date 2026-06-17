@@ -133,6 +133,28 @@ python benchmark_df3dv.py --root DF3DV-1K --eval_star --eval_41 --start 0 --end 
 
 ## Leaderboard File Preparation
 
+```
+leaderboard
+└── 3DGS
+    ├── DF3DV-1K-Star
+    │   ├── 0000
+    │   │   ├── 040625-LundoBin
+    │   │   │   ├── extra_IMG_6957.png
+    │   │   │   ├── ...
+    │   │   │   └── extra_IMG_7041.png
+    │   │   ├── ...
+    │   │   └── 090625-BlueBikeBell
+    │   ├── ...
+    │   └── 0024
+    ├── DF3DV-41
+    │   ├── 021125-Chess
+    │   │   ├── extra_IMG_7474.png
+    │   │   ├── ...
+    │   │   └── extra_IMG_7524.png
+    │   ├── ...
+    │   └── 301025-TempleDrumIncense
+```
+
 - You can extract the rendering images of `<method>` into the `leaderboard/<method>` folder using the following commands. 
 ```
 # DF3DV-1K

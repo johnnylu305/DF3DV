@@ -1,0 +1,11 @@
+python3 src/predict_di2fix.py \
+    --dataset_path ../DF3DV-1K-Fixer/dataset_df3dv1k.json \
+    --ckpt outputs/df3dv1k/di2fix/train/checkpoints/model_87501.pkl \
+    --out_dir results/di2fix/ \
+    --split test \
+    --save_grid \
+    --lora_rank_vae 4 \
+    --timestep 199 \
+    --mixed_precision no \
+    --mv_unet \
+    --all_ids

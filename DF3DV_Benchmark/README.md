@@ -179,3 +179,4 @@ python benchmark_leaderboard.py --root DF3DV-1K --method <method> --eval_41 --nu
 - The official leaderboard currently accepts DF3DV-41 submissions only.
 - Please complete the submission [form](https://docs.google.com/forms/d/e/1FAIpQLSfy5-jwm5eGIz8a9mGIdxP49GmilLoaQKHtl31Y6G3doyz1qQ/viewform?usp=publish-editor) first.
 - Then, zip the submission files and send them to [Cheng-You Lu](mailto:a2694815@gmail.com) with the subject line: "[Your Method Name] DF3DV-41 Leaderboard Submission". Please also include a Google Drive download link in your email.
+- Here is an [example](https://drive.google.com/drive/folders/1WBAqmYMUmwznbtR4J_3-7g6P0_n836zB?usp=drive_link).

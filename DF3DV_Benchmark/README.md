@@ -1,5 +1,5 @@
 ## Download DF3DV-1K
-Follow the download instructions [here](https://github.com/johnnylu305/DF3DV#download) to download DF3DV-1K.
+Follow the download instructions [here](https://github.com/johnnylu305/DF3DV#df3dv-1k) to download DF3DV-1K.
 
 ## Downscale Images
 

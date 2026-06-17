@@ -154,13 +154,13 @@ python src/eval.py --root results/di2fix/grid/ \
 </details>
 
 ## Custom Dataset
-If you would like to process your own data for training or evaluation, you can follow the preprocessing pipelines used for [DF3DV-1K]() and [DF3DV-1K-Fixer](https://github.com/johnnylu305/DF3DV-1K/tree/main/Fixer_Data_Preparation).
+If you would like to process your own data for training or evaluation, you can follow the preprocessing pipelines used for [DF3DV-1K](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Data_Preparation) and [DF3DV-1K-Fixer](https://github.com/johnnylu305/DF3DV-1K/tree/main/Fixer_Data_Preparation).
 
 ## Acknowledgements
 DI<sup>2</sup>FIX is built upon the following project:
 - [Difix3D](https://github.com/nv-tlabs/Difix3D)
 - [DF3DV-1K](https://github.com/johnnylu305/DF3DV-1K)
-- [DF3DV-1K-Fixer](https://github.com/johnnylu305/DF3DV-1K)
+- [DF3DV-1K-Fixer]([https://github.com/johnnylu305/DF3DV-1K](https://github.com/johnnylu305/DF3DV#download-1))
 
 ## License
 The license of DI<sup>2</sup>FIX follows the Difix3D [license](https://github.com/nv-tlabs/Difix3D/blob/main/LICENSE.txt).

@@ -9,7 +9,7 @@
 <br><sup>*</sup>Equal Contribution&nbsp;&nbsp;
 
 ### [Project Page]() · [Paper](https://arxiv.org/abs/2604.13416) · [DF3DV-1K Dataset](https://github.com/johnnylu305/DF3DV#download) · [DF3DV Benchmark](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Benchmark)
-### [DI²FIX Dataset](https://github.com/johnnylu305/DF3DV/tree/main#download-1) · [DI²FIX Demo Page]() · [DI²FIX Codebase]()
+### [DI²FIX Dataset](https://github.com/johnnylu305/DF3DV/tree/main#download-1) · [DI²FIX Demo Page](https://chengyou305-di2fix-demo.hf.space/) · [DI²FIX Codebase](https://github.com/johnnylu305/DF3DV/tree/main/DI2FIX)
 
 ---
 </div>

@@ -22,10 +22,10 @@
     - [DI²FIX Dataset](https://github.com/johnnylu305/DF3DV/tree/main#download-1)
 - Quick Start
     - [DF3DV-1K Quick Start](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Benchmark)
-    - [DI²FIX Quick Start](https://github.com/johnnylu305/DI2FIX)
+    - [DI²FIX Quick Start](https://github.com/johnnylu305/DF3DV/tree/main/DI2FIX)
 - Benchmark
-    - [Leaderboard]()
-    - [Leaderboard Submission]() 
+    - [Leaderboard](https://johnnylu305.github.io/df3dv1k_web/#leaderboard)
+    - [Leaderboard Submission](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Benchmark#leaderboard-file-preparation) 
 - Data Customization
   - [DF3DV-1K](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Data_Preparation)
   - [DI²FIX](https://github.com/johnnylu305/DF3DV/tree/main/Fixer_Data_Preparation)

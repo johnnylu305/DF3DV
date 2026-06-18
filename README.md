@@ -18,7 +18,7 @@
 ## Outline
 
 - Dataset
-    - [DF3DV-1K Dataset](https://github.com/johnnylu305/DF3DV#download)
+    - [DF3DV-1K Dataset](https://github.com/johnnylu305/DF3DV#df3dv-1k)
     - [DI²FIX Dataset](https://github.com/johnnylu305/DF3DV/tree/main#download-1)
 - Quick Start
     - [DF3DV-1K Quick Start](https://github.com/johnnylu305/DF3DV/tree/main/DF3DV_Benchmark)

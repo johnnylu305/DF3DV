@@ -8,7 +8,7 @@
 <p><sup>1</sup>University of Technology Sydney &nbsp;&nbsp;<sup>2</sup>University of Sydney&nbsp;&nbsp;<sup>3</sup>National Yang Ming Chiao Tung University&nbsp;&nbsp;
 <br><sup>*</sup>Equal Contribution&nbsp;&nbsp;
 
-### [Project Page]() · [Paper](https://arxiv.org/abs/2604.13416) · [Demo Page](https://chengyou305-di2fix-demo.hf.space/)
+### [Project Page](https://johnnylu305.github.io/df3dv1k_web/) · [Paper](https://arxiv.org/abs/2604.13416) · [Demo Page](https://chengyou305-di2fix-demo.hf.space/)
 
 ---
 

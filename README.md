@@ -14,6 +14,8 @@
 ---
 </div>
 
+## ✨ News
+- **DF3DV-Extra is now available**, adding more than **1,000 new scenes** and doubling the size of the DF3DV dataset! Please temporarily assign the credit for the DF3DV-Extra dataset to the DF3DV-1K team by mentioning that your work uses DF3DV-Extra, collected by the DF3DV-1K group, if you find the dataset useful.
 
 ## Outline
 
@@ -105,6 +107,8 @@ We release one thousand scenes with clean and cluttered images for distractor-fr
 The masked dataset can be downloaded from both Hugging Face and Google Cloud.
 - [DF3DV-1K Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-1K) (~1TB)
 - [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1OuLBTius8bnXfd51ckgRo7H32ZRv2q8N?usp=sharing) (~1TB)
+- [DF3DV-Extra Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-Extra)
+- [DF3DV-Extra Google Cloud](https://drive.google.com/drive/folders/1FroXyRzqxSmlRtrQOAUZlN5AbYBJ9f-W?usp=sharing)
   
 The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here](https://docs.google.com/forms/d/e/1FAIpQLSfQDGWlcIUNees5SqmOmgnQ4vlk7VnkA703ybgHbJLV-MSoZg/viewform?usp=dialog).
 

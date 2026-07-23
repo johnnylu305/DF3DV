@@ -3,7 +3,7 @@
 
 # DF3DV-1K: A Large-Scale Dataset and Benchmark for Distractor-Free Novel View Synthesis
 
-[Cheng-You Lu](https://johnnylu305.github.io/)<sup>1</sup>, Yi-Shan Hung<sup>2*</sup>, Wei-Ling Chi<sup>3*</sup>, Hao-Ping Wang<sup>3*</sup>,  Charlie Li-Ting Tsai<sup>1*</sup>, Yu-Cheng Chang<sup>1</sup>, [Yu-Lun Liu](https://yulunalexliu.github.io/)<sup>3</sup>, Thomas Do<sup>1</sup>, [Chin-Teng Lin](https://scholar.google.com/citations?user=nubkF1cAAAAJ&hl=zh-TW)<sup>1</sup>
+[Cheng-You Lu](https://johnnylu305.github.io/)<sup>1</sup>, Yi-Shan Hung<sup>2</sup>, Wei-Ling Chi<sup>3*</sup>, Hao-Ping Wang<sup>3*</sup>,  Charlie Li-Ting Tsai<sup>1*</sup>, Yu-Cheng Chang<sup>1</sup>, [Yu-Lun Liu](https://yulunalexliu.github.io/)<sup>3</sup>, Thomas Do<sup>1</sup>, [Chin-Teng Lin](https://scholar.google.com/citations?user=nubkF1cAAAAJ&hl=zh-TW)<sup>1</sup>
 
 <p><sup>1</sup>University of Technology Sydney &nbsp;&nbsp;<sup>2</sup>University of Sydney&nbsp;&nbsp;<sup>3</sup>National Yang Ming Chiao Tung University&nbsp;&nbsp;
 <br><sup>*</sup>Equal Contribution&nbsp;&nbsp;

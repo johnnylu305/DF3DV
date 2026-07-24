@@ -17,6 +17,9 @@
 ## ✨ News
 - **DF3DV-Extra is now available**, adding more than **1,000 new scenes** and doubling the size of the DF3DV dataset! Please temporarily assign the credit for the DF3DV-Extra dataset to the DF3DV-1K team by mentioning that your work uses DF3DV-Extra, collected by the DF3DV-1K group, if you find the dataset useful.
 
+## Introduction
+[![Watch the video](https://img.youtube.com/vi/EAW3rW9vn9w/maxresdefault.jpg)]([https://youtu.be/EAW3rW9vn9w](https://youtu.be/EAW3rW9vn9w))
+
 ## Outline
 
 - Dataset

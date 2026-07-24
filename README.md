@@ -185,7 +185,9 @@ We also release paired 3DGS/Distractor-Free 3DGS renderings and corresponding gr
 The masked dataset can be downloaded from both Hugging Face and Google Cloud.
 - [DF3DV-1K Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-1K-Fixer) (~0.2TB)
 - [DF3DV-1K Google Cloud](https://drive.google.com/drive/folders/1JE399E_o45mLavMqEWzpEYAlB-4-rjkc?usp=sharing) (~0.2TB)
-  
+- [DF3DV-Extra Hugging Face](https://huggingface.co/datasets/ChengYou305/DF3DV-Extra-Fixer) 
+- [DF3DV-Extra Google Cloud](https://drive.google.com/drive/folders/1kliiROJooXrpJdp-tn4owI27I8JhrwUK?usp=sharing)
+ 
 The original dataset can be downloaded from both Hugging Face and Google Cloud after completing the form and agreeing to the terms of use [here](https://docs.google.com/forms/d/e/1FAIpQLSfQDGWlcIUNees5SqmOmgnQ4vlk7VnkA703ybgHbJLV-MSoZg/viewform?usp=dialog).
 
 ## Citation

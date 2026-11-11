@@ -168,10 +168,12 @@ The license of DI<sup>2</sup>FIX follows the Difix3D [license](https://github.co
 
 ## Citation
 ```
-@article{lu2026df3dv,
+@inproceedings{lu2026df3dv,
   title={DF3DV-1K: A Large-Scale Dataset and Benchmark for Distractor-Free Novel View Synthesis},
-  author={Lu, Cheng-You and Hung, Yi-Shan and Chi, Wei-Ling and Wang, Hao-Ping and Tsai, Charlie Li-Ting and Chang, Yu-Cheng and Liu, Yu-Lun and Do, Thomas and Lin, Chin-Teng},
-  journal={arXiv preprint arXiv:2604.13416},
-  year={2026}
+  author={Lu, Cheng-You and Hung, Yi-Shan and Chi, Wei Ling and Wang, Hao Ping and Tsai, Charlie Li-Ting and Chang, Yu-Cheng and Liu, Yu-Lun and Do, Thomas and Lin, Chin-Teng},
+  booktitle={European Conference on Computer Vision},
+  pages={185--206},
+  year={2026},
+  organization={Springer}
 }
 ```
